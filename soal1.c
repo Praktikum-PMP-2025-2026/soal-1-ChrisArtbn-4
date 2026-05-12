@@ -37,7 +37,7 @@ struct Node* buattree(int arr[], int i , int N){
 void preorder(struct Node* root){
     if (root == NULL)
     return;
-    printf("%d ", root->item);
+    printf(" %d", root->item);
     preorder(root->left);
     preorder(root->right);
 }
@@ -46,7 +46,7 @@ void inorder(struct Node* root){
     if (root == NULL)
     return;
     inorder(root->left);
-    printf("%d ", root->item);
+    printf(" %d", root->item);
     inorder(root->right);
 }
 
@@ -55,7 +55,7 @@ void postorder(struct Node* root){
     return;
     postorder(root->left);
     postorder(root->right);
-    printf("%d ", root->item);
+    printf(" %d", root->item);
 }
 
 int main(){
@@ -68,13 +68,13 @@ int main(){
 
     struct Node* root = buattree(arr, 0, N);
 
-    printf("PRE ");
+    printf("PRE");
     preorder(root);
     printf("\n");
-    printf("IN ");
+    printf("IN");
     inorder(root);
     printf("\n");
-    printf("POST ");
+    printf("POST");
     postorder(root);
     printf("\n");
 
