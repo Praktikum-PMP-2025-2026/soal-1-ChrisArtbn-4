@@ -68,8 +68,6 @@ int main(){
 
     struct Node* root = buattree(arr, 0, N);
 
-    int nilai;
-
     printf("PRE ");
     preorder(root);
     printf("\n");
